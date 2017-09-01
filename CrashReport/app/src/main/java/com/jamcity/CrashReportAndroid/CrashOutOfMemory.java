@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashOutOfMemory extends Crash {
     public CrashOutOfMemory() {
         super();
@@ -12,7 +14,7 @@ public class CrashOutOfMemory extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
         Object[] emptyObjectArray = null;
         while (true) {
             emptyObjectArray = new Object[] {emptyObjectArray};

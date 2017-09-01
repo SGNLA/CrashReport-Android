@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashDivideByZero extends Crash {
     public CrashDivideByZero() {
         super();
@@ -12,7 +14,7 @@ public class CrashDivideByZero extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
         Float value = new Float(1/0);
     }
 }

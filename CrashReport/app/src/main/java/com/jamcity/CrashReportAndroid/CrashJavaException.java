@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashJavaException extends Crash {
     public CrashJavaException() {
         super();
@@ -12,7 +14,7 @@ public class CrashJavaException extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
         RuntimeException exception = new RuntimeException();
         throw exception;
     }

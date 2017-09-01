@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashAccessNonObject extends Crash {
     public CrashAccessNonObject() {
         super();
@@ -12,7 +14,7 @@ public class CrashAccessNonObject extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
         JNIUtil.accessNonObject();
     }
 }

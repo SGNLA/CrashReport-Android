@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashTestCase extends Crash {
     public CrashTestCase() {
         super();
@@ -12,6 +14,7 @@ public class CrashTestCase extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
+
     }
 }

@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashNULLPointer extends Crash {
     public CrashNULLPointer() {
         super();
@@ -12,7 +14,7 @@ public class CrashNULLPointer extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
         RuntimeException nullException = null;
         throw nullException;
     }

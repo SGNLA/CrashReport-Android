@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashCast extends Crash {
     public CrashCast() {
         super();
@@ -12,7 +14,7 @@ public class CrashCast extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
         Integer value = new Integer(0);
         Exception testException = cast(value);
         testException.toString();

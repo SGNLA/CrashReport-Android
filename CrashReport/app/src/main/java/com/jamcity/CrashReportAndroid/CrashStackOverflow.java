@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashStackOverflow extends Crash {
     public CrashStackOverflow() {
         super();
@@ -12,7 +14,7 @@ public class CrashStackOverflow extends Crash {
     }
 
     @Override
-    public void crash() {
-        this.crash();
+    public void crash(Context context) {
+        this.crash(context);
     }
 }

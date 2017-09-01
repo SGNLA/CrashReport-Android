@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashCXXException extends Crash {
     public CrashCXXException() {
         super();
@@ -12,7 +14,7 @@ public class CrashCXXException extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
         JNIUtil.throwCException();
     }
 }

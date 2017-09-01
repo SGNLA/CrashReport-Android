@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashPrivCommand extends Crash {
     public CrashPrivCommand() {
         super();
@@ -12,7 +14,7 @@ public class CrashPrivCommand extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
         try {
             Process p = Runtime.getRuntime().exec("w");
         }

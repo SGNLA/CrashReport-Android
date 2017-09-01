@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class Crash {
     static public String[] ALL_CRASH_PATH_ARRAY = {
         // "com.jamcity.CrashReportAndroid.CrashTestCase",
@@ -12,7 +14,10 @@ public class Crash {
         "com.jamcity.CrashReportAndroid.CrashDivideByZero",
         "com.jamcity.CrashReportAndroid.CrashAccessNonObject",
         "com.jamcity.CrashReportAndroid.CrashPrivCommand",
-        "com.jamcity.CrashReportAndroid.CrashDupThreadHook"
+        "com.jamcity.CrashReportAndroid.CrashDupThreadHook",
+        "com.jamcity.CrashReportAndroid.CrashConcurrentModification",
+        "com.jamcity.CrashReportAndroid.CrashSecurity",
+        "com.jamcity.CrashReportAndroid.CrashLoadLibrary"
     };
 
     public String category = "Default crash category";
@@ -25,7 +30,7 @@ public class Crash {
 
     }
 
-    public void crash() {
+    public void crash(Context context) {
 
     }
 }

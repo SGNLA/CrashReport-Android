@@ -1,5 +1,7 @@
 package com.jamcity.CrashReportAndroid;
 
+import android.content.Context;
+
 public class CrashDupThreadHook extends Crash {
     public CrashDupThreadHook() {
         super();
@@ -12,7 +14,7 @@ public class CrashDupThreadHook extends Crash {
     }
 
     @Override
-    public void crash() {
+    public void crash(Context context) {
         Runtime.getRuntime().addShutdownHook(Thread.currentThread());
     }
 }

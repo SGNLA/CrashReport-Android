@@ -26,7 +26,7 @@ public class CrashDetailActivity extends AppCompatActivity {
             ((Button)findViewById(R.id.CrashButton)).setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
-                    crashInstance.crash();
+                    crashInstance.crash(CrashDetailActivity.this);
                 }
             });
         }
