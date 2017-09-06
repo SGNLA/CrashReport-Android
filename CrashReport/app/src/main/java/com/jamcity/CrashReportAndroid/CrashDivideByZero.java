@@ -8,7 +8,7 @@ public class CrashDivideByZero extends Crash {
 
         category = "Arithmetic";
         title = "Divide by Zero";
-        description = "Test all kind of case befor it become official!";
+        description = "Crash on int divide by 0 int.";
 
         classPath = "com.jamcity.CrashReportAndroid.CrashDivideByZero";
     }

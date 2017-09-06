@@ -8,7 +8,7 @@ public class CrashOutOfMemory extends Crash {
 
         category = "SIGSEGV";
         title = "Out of Memory";
-        description = "Keep allocating empty object array containing presious allocated array to crash by out of memory.";
+        description = "Keep allocating empty object array containing previous allocated array to crash by out of memory.";
 
         classPath = "com.jamcity.CrashReportAndroid.CrashOutOfMemory";
     }

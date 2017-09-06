@@ -8,7 +8,7 @@ public class CrashPrivCommand extends Crash {
 
         category = "SIGILL";
         title = "Privileged Command";
-        description = "Run command that should only be used by supervisor";
+        description = "Run command that should only be used by supervisor.";
 
         classPath = "com.jamcity.CrashReportAndroid.CrashPrivCommand";
     }

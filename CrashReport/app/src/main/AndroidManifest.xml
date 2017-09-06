@@ -16,10 +16,17 @@
             </intent-filter>
         </activity>
 
+        <!-- HockeyApp meta-data -->
         <!-- meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="${HOCKEYAPP_APP_ID}" /-->
+
+        <!-- Crashlytics meta-data -->
+        <!-- meta-data android:name="io.fabric.ApiKey" android:value="$API_KEY" /-->
 
         <activity android:name=".CrashDetailActivity" android:parentActivityName=".MainActivity">
         </activity>
     </application>
+
+    <!-- Crashlytics permission -->
+    <!-- uses-permission android:name="android.permission.INTERNET" /-->
 
 </manifest>

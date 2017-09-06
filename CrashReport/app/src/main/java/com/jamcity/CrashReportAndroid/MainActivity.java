@@ -14,6 +14,15 @@ import net.hockeyapp.android.CrashManagerListener;
 import net.hockeyapp.android.metrics.MetricsManager;
 import net.hockeyapp.android.utils.Util;*/
 
+// MobileCenter import
+/*import com.microsoft.azure.mobile.MobileCenter;
+import com.microsoft.azure.mobile.analytics.Analytics;
+import com.microsoft.azure.mobile.crashes.Crashes;*/
+
+// Crashlytics import
+/*import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;*/
+
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // MobileCenter start
+        // MobileCenter.start(getApplication(), "$APP_SECRET", Analytics.class, Crashes.class);
+
+        // Crashlytics with
+        // Fabric.with(this, new Crashlytics());
 
         setContentView(R.layout.activity_main);
 

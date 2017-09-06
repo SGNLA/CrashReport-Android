@@ -8,7 +8,7 @@ public class CrashDupThreadHook extends Crash {
 
         category = "Argument";
         title = "Illegal Argument";
-        description = "Add current Thread hook in to runtime shutdown.";
+        description = "Add current Thread hook in to cause runtime shutdown.";
 
         classPath = "com.jamcity.CrashReportAndroid.CrashDupThreadHook";
     }

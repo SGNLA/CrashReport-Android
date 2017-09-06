@@ -8,7 +8,7 @@ public class CrashAccessNonObject extends Crash {
 
         category = "JNI";
         title = "Access Non Object";
-        description = "Access non object in native code to make it crash. print(\"%s\", (void*)16)";
+        description = "Access non object in native code to make it crash. print(\"%s\", (void*)11119)";
 
         classPath = "com.jamcity.CrashReportAndroid.CrashAccessNonObject";
     }
